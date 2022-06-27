@@ -13,5 +13,5 @@ The default Azure SDK for python comes with the ability to checkpoint Azure Even
 
 Here are some sample code examples with helper scripts to run a dummy listener with checkpointing and a producer script with which you can test the checkpointing. The environment variables need to be set properly in order for the scripts to work. These scripts serve the purpose of show casing the usage and are **NOT** to be used in any production environment as is!
 
-1. ![sample_consume_event_with_local_checkpointing_async.py](./sample/sample_consume_event_with_local_checkpointing_async.py)
-2. ![sample_produce_event_async.py](./sample/sample_produce_event_async.py)
+1. [sample_consume_event_with_local_checkpointing_async.py](./sample/sample_consume_event_with_local_checkpointing_async.py)
+2. [sample_produce_event_async.py](./sample/sample_produce_event_async.py)
