@@ -10,7 +10,8 @@ from .._localcheckpointstore import LocalCheckpointStore
 CONN_STR = environ.get("EVENTHUB_CONN_STR")
 EVENTHUB_NAME = environ.get("EVENTHUB_NAME")
 CONSUMER_GROUP = environ.get("EVENTHUB_CONSUMER_GROUP", "$Default")
-CHECKPOINT_DIR = environ.get("EVENTHUB_CHECKPOINT_DIR")
+# Path to root directory where checkpoint objects will be stored
+CHECKPOINT_DIR = environ.get("EVENTHUB_CHECKPOINT_DIR") # Eg: /data/my_username/eventhub_checkpint/
 
 async def _execute_on_event(
     partition_context: PartitionContext, 
