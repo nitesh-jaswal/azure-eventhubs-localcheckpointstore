@@ -1,7 +1,9 @@
 # Azure Eventhubs Local Checkpoint Store
 
+Dependancy: `azure-eventhub=5.10.0`
+
 ## Introduction
-The default Azure SDK for python comes with the ability to checkpoint Azure EventHub events to the Azure Blob Storage only. However, the SDK does provide an Abstract Base Class  for custom implementation to a different storage device. This project provides a custom implementation of the checkpoint store for a local drive/file system. 
+The default Azure SDK for python comes with the ability to checkpoint Azure EventHub events to the Azure Blob Storage only. However, it does not provide the implementation to save the EventHub checkpoint object to a local/mounted file system. This project aims to provide that functionality by utilising the CheckpointStore Abstract Base Class provided in the SDK 
 
 ![Azure EventHubs with Local Checkpointing](./docs/images/producer_services.png)
 
